@@ -14,7 +14,7 @@ Normal install via Composer.
 use Travis\Tracker;
 
 // submit request
-$response = Travis\Tracker::run('YOURAPIKEY', 'createContact', [
+$response = Tracker::run('YOURAPIKEY', 'createContact', [
 	'instructions' => [
 		'createcompanyifnotexists' => true,
 		'overwritecontact' => false
