@@ -2,6 +2,8 @@
 
 A PHP package for working w/ the TrackerRMS API.
 
+THIS LIBRARY IS CURRENTLY NOT WORKING BUT IS POSTED FOR COLLABORATIVE PURPOSES.
+
 ## Install
 
 Normal install via Composer.
