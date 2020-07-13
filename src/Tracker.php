@@ -7,19 +7,20 @@ class Tracker
     /**
      * Make an API request.
      *
-     * @param   string  $key
+     * @param   string  $username
+     * @param   string  $password
      * @param   string  $method
      * @param   array   $arguments
      * @param   int     $timeout
      * @return  array
      */
-    public static function run($key, $method, $arguments = [], $timeout = 30)
+    public static function run($username, $password, $method, $arguments = [], $timeout = 30)
     {
         // set endpoint
         $endpoint = 'https://evoapi.tracker-rms.com/api/widget/'.$method;
 
         // amend arguments
-        $arguments = array_merge(['credentials' => ['apikey' => $key]], $arguments);
+        $arguments = array_merge(['credentials' => ['username' => $username, 'password' => $password]], $arguments);
 
         // build payload
         $payload = [
